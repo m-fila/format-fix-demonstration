@@ -10,7 +10,6 @@ jobs:
     # Only makes sense on PRs here and we also immediately filter out any other
     # comments than "/fix-style"
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/fix-style')
-    
     runs-on:
       ubuntu-latest
 
